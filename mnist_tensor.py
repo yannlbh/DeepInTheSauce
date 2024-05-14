@@ -34,6 +34,8 @@ model = tf.keras.models.Sequential([
     tf.keras.layers.Dense(10)
 ])
 
+model.summary()
+
 model.compile(
     optimizer=tf.keras.optimizers.Adam(0.001),
     loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
